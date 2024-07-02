@@ -37,7 +37,7 @@ app.get("/api/hello", async (req, res) => {
 			greeting: greeting,
 		});
 	} catch (error) {
-		console.error(error);
+		
 		res.status(500).json({
 			status: "Error",
 			message: "unable to fetch data",
